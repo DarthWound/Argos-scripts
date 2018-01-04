@@ -42,7 +42,7 @@ To revert back to french, open terminal as user and copy-paste this:
 ```
 wget -qO- https://raw.githubusercontent.com/DarthWound/Argos-scripts/master/translate/french.sh | sh
 ```
-Feel free to submit other translations in "issues" section :)
+Feel free to submit translations for other languages in "issues" section :)
 
 ## Modifications
 It's easy to tweak these scripts at your convenience if you know bash.
