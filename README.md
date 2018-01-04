@@ -39,7 +39,9 @@ It's easy to tweak these scripts at your convenience if you know bash.
 
 Title should automatically fetch your distro name with `lsb_release`, if not change the "$DIST" line in main file. 
 
-## Screenshot
+## Screenshots
 Default file, in french:
 
 ![screenshot_aS](https://i.imgur.com/DYGWBmL.png)
+
+![screencast_aS](https://i.imgur.com/k2VavpU.gif)
