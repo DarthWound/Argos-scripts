@@ -3,7 +3,7 @@ Custom scripts to use with [Argos](https://extensions.gnome.org/extension/1176/a
 
 Intended for openSUSE, but you can remove YaST entry and edit `upgrade.sh` file easily.
 
-**These files _(`scripts.12m.sh`, `upgrade.sh`, `snapshots.sh`)_ are in french with english as an option.**
+**These files _(`scripts.30m.sh`, `upgrade.sh`, `snapshots.sh`)_ are in french with english as an option.**
 
 **Open them and add/remove bash comments _(#)_ to convert. Translations are already there.**
 
