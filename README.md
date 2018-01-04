@@ -12,7 +12,7 @@ Requires "lsb_release" and "python3", you should be able to install these items 
 
 > **Features:**
 
-> * Show if a new snapshot is available _(openSUSE Tumbleweed updates)_
+> * Show if a new snapshot is available + desktop notification _(openSUSE Tumbleweed updates)_
 
 > * 2-clicks system update _(supports openSUSE -default-, Fedora, Arch, Ubuntu/Debian)_
 
