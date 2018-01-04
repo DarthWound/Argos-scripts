@@ -20,7 +20,6 @@ su -c 'zypper ref && zypper dup --no-allow-vendor-change --no-recommends' # with
 sleep 5s
 clear
 
-# Ask for reboot in french
 read -p "Redémarrer l'ordinateur ? [O/n]: " REP
 if [ "$REP" = "O" ] || [ "$REP" = "o" ]
 then
@@ -28,12 +27,3 @@ systemctl reboot; # try to replace with "sudo shutdown now" if you don't have Sy
 else
 exit 0;
 fi
-
-# Ask for reboot in english
-# read -p "Reboot computer? [Y/n]: " REP
-# if [ "$REP" = "Y" ] || [ "$REP" = "y" ]
-# then
-# systemctl reboot; # try to replace with "sudo shutdown now" if you don't have SystemD
-# else
-# exit 0;
-# fi
