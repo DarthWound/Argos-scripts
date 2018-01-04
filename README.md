@@ -3,10 +3,6 @@ Custom scripts to use with [Argos](https://extensions.gnome.org/extension/1176/a
 
 Intended for openSUSE, but you can remove YaST entry and edit `upgrade.sh` file easily.
 
-**These files _(`scripts.30m.sh`, `upgrade.sh`, `snapshots.sh`)_ are in french with english as an option.**
-
-**Open them and add/remove bash comments _(#)_ to convert. Translations are already there.**
-
 Requires "lsb_release" and "python3", you should be able to install these items from your distro' repositories.
 
 
@@ -34,6 +30,19 @@ Then in user terminal, copy-paste this:
 cd ~/.config/argos/ && wget https://github.com/DarthWound/Argos-scripts/blob/master/scripts.sh && mkdir rsrc && cd rsrc && wget https://github.com/DarthWound/Argos-scripts/blob/master/rsrc/matrix-curses.py https://github.com/DarthWound/Argos-scripts/blob/master/rsrc/upgrade.sh https://github.com/DarthWound/Argos-scripts/blob/master/rsrc/snapshots.sh https://github.com/DarthWound/Argos-scripts/blob/master/rsrc/yast.sh https://github.com/DarthWound/Argos-scripts/blob/master/rsrc/daynight.sh && cd .. && chmod -R a+x *
 ```
 I suggest you to remove default files located in "~/.config/argos/" before.
+
+**Some files are in french by default!**
+
+To translate in english, open terminal as user and copy-paste this:
+```
+wget -qO- https://raw.githubusercontent.com/DarthWound/Argos-scripts/master/translate/english.sh | sh
+```
+
+To revert back to french, open terminal as user and copy-paste this:
+```
+wget -qO- https://raw.githubusercontent.com/DarthWound/Argos-scripts/master/translate/french.sh | sh
+```
+Feel free to submit other translations in "issues" section :)
 
 ## Modifications
 It's easy to tweak these scripts at your convenience if you know bash.
