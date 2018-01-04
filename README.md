@@ -3,22 +3,22 @@ Custom scripts to use with [Argos](https://extensions.gnome.org/extension/1176/a
 
 Intended for openSUSE, but you can remove YaST entry and edit `upgrade.sh` file easily.
 
-Some of these files are in french with english as an option (`scripts.12m.sh`, `upgrade.sh`, `snapshots.sh`).
+**These files _(`scripts.12m.sh`, `upgrade.sh`, `snapshots.sh`)_ are in french with english as an option.**
 
-Open them and add/remove bash comments (#) to convert. Translations are already there.
+**Open them and add/remove bash comments _(#)_ to convert. Translations are already there.**
 
 Requires "lsb_release" and "python3", you should be able to install these items from your distro' repositories.
 
 
-> Features:
+> **Features:**
 
-> * 2-clicks system update (supports openSUSE -default-, Fedora, Arch, Ubuntu/Debian)
+> * 2-clicks system update _(supports openSUSE -default-, Fedora, Arch, Ubuntu/Debian)_
 
-> * 2-clicks YaST (ncurses mode, for Wayland)
+> * 2-clicks YaST _(ncurses mode, for Wayland)_
 
-> * 2-clicks enable or disable dark theme (for Adwaita + Adapta, Arc, Geeko, Materia)
+> * 2-clicks enable or disable dark theme _(for Adwaita + Adapta, Arc, Geeko, Materia)_
 
-> * Matrix script in fullscreen terminal (nice screensaver)
+> * Matrix script in fullscreen terminal _(nice screensaver)_
 
 > * Tweaking made easy with descriptive comments almost everywhere
 
