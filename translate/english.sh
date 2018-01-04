@@ -3,7 +3,7 @@
 DIR=~/.config/argos/
 
 clear
-printf "Translating Argos scripts in english..."
+printf "Translating Argos scripts in english...\n"
 
 cat > $DIR/scripts.30m.sh << "EOF"
 #!/usr/bin/env bash
