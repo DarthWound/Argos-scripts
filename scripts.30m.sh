@@ -28,6 +28,7 @@ echo "-- Éditer le CSS gnome-shell | bash='xdg-open ~/.themes/Adwaita-DWS/gnome
 #echo "---"
 #echo "<b>System update</b> | iconName=view-refresh-symbolic | bash='$DIR/upgrade.sh' terminal=true color=#35b9ab" # edit upgrade.sh for your distro and for english
 #echo "<b>Run YaST console</b> | iconName=system-run-symbolic | bash='$DIR/yast.sh' terminal=true color=#73ba25" # openSUSE (Leap and Tumbleweed) only
+#echo "---"
 #echo "Toggle light/dark theme | bash='$DIR/daynight.sh' terminal=false" # edit daynight.sh for Adapta, Arc, Geeko, or Materia - request other themes on my GitHub
 #echo "Enter the matrix | bash='gnome-terminal --full-screen -- python3 $DIR/matrix-curses.py' terminal=false"
 #echo "---"
