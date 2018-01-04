@@ -1,7 +1,7 @@
 # Argos-scripts
 Custom scripts to use with [Argos](https://extensions.gnome.org/extension/1176/argos/) GNOME Shell extension.
 
-Intended for openSUSE, but you can remove YaST entry and edit `upgrade.sh` file easily.
+Intended for openSUSE, but you can remove specific entries and edit `upgrade.sh` file easily.
 
 Requires "lsb_release" and "python3", you should be able to install these items from your distro' repositories.
 
@@ -23,7 +23,7 @@ Requires "lsb_release" and "python3", you should be able to install these items 
 > * other small stuff
 
 ## Installation
-Install Argos extension first!
+**Install Argos extension first!**
 
 Then in user terminal, copy-paste this:
 ```
