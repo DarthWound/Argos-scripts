@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Content of this script is updated every 12 minutes (5 times per hour)
+# Content of this script is updated every 30 minutes (change "30m" part in scripts.30m.sh to change that)
 
 DIR=$(dirname "$0")/rsrc
 DIST=$(lsb_release -sd | tr -d '"')\ \($(lsb_release -sr)\)
