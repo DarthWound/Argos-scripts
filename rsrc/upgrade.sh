@@ -1,10 +1,12 @@
 #!/bin/bash
 
 # openSUSE Tumbleweed
-su -c 'zypper ref && zypper dup --no-allow-vendor-change --no-recommends'
+su -c 'zypper ref && zypper dup --no-allow-vendor-change --no-recommends' # without recommended packages - doesn't reinstall some stuff that you removed
+#su -c 'zypper ref && zypper dup --no-allow-vendor-change' # with recommended packages - could reinstall what you've removed but may avoid issues
 
 # openSUSE Leap
-# su -c 'zypper ref && zypper up --no-recommends'
+# su -c 'zypper ref && zypper up --no-recommends' # without recommended packages - doesn't reinstall some stuff that you removed
+# su -c 'zypper ref && zypper up' # with recommended packages - could reinstall what you've removed but may avoid issues
 
 # Fedora
 # su -c 'dnf --refresh upgrade'
@@ -15,20 +17,23 @@ su -c 'zypper ref && zypper dup --no-allow-vendor-change --no-recommends'
 # Arch
 # su -c 'pacman -Syu'
 
-# Ask for reboot in french (requires SystemD)
+sleep 5s
+clear
+
+# Ask for reboot in french
 read -p "Redémarrer l'ordinateur ? [O/n]" REP
-if [ "$REP" = "O" ] || [ "$a" = "o" ]
+if [ "$REP" = "O" ] || [ "$REP" = "o" ]
 then
-systemctl reboot;
+systemctl reboot; # try to replace with "sudo shutdown now" if you don't have SystemD
 else
 exit 0;
 fi
 
-# Ask for reboot in english (requires SystemD)
+# Ask for reboot in english
 # read -p "Reboot computer? [Y/n]" REP
-# if [ "$REP" = "Y" ] || [ "$a" = "y" ]
+# if [ "$REP" = "Y" ] || [ "$REP" = "y" ]
 # then
-# systemctl reboot;
+# systemctl reboot; # try to replace with "sudo shutdown now" if you don't have SystemD
 # else
 # exit 0;
 # fi
