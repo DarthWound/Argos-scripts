@@ -7,12 +7,12 @@ TWSSC=$(lsb_release -sr)
 if [ "$TWSSA" == "$TWSSC" ] ; then
 echo "Aucun nouveau snapshot disponible."
 elif [ "$TWSSA" != "$TWSSC" ] ; then
-echo "Snapshot \"$TWSSA\" disponible !"
+echo "Snapshot \"$TWSSA\" disponible !" && notify-send -i software-update-available-symbolic "Snapshot \"$TWSSA\" disponible !"
 fi
 
 # ENGLISH
 #if [ "$TWSSA" == "$TWSSC" ] ; then
 #echo "No new snapshot available."
 #elif [ "$TWSSA" != "$TWSSC" ] ; then
-#echo "Snapshot \"$TWSSA\" available!"
+#echo "Snapshot \"$TWSSA\" available!" && notify-send -i software-update-available-symbolic "Snapshot \"$TWSSA\" available!"
 #fi
