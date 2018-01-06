@@ -1,4 +1,4 @@
-# Argos-scripts
+# Argos-DWS
 Custom scripts to use with [Argos](https://extensions.gnome.org/extension/1176/argos/) GNOME Shell extension.
 
 Intended for openSUSE, but you can remove specific entries and edit `upgrade.sh` file easily.
@@ -27,7 +27,7 @@ Intended for openSUSE, but you can remove specific entries and edit `upgrade.sh`
 
 Then in user terminal, copy-paste this:
 ```
-cd ~/.config/argos/ && wget https://github.com/DarthWound/Argos-scripts/blob/master/scripts.sh && mkdir rsrc && cd rsrc && wget https://github.com/DarthWound/Argos-scripts/blob/master/rsrc/matrix-curses.py https://github.com/DarthWound/Argos-scripts/blob/master/rsrc/upgrade.sh https://github.com/DarthWound/Argos-scripts/blob/master/rsrc/snapshots.sh https://github.com/DarthWound/Argos-scripts/blob/master/rsrc/yast.sh https://github.com/DarthWound/Argos-scripts/blob/master/rsrc/daynight.sh && cd .. && chmod -R a+x *
+cd ~/.config/argos/ && wget https://github.com/DarthWound/Argos-DWS/blob/master/scripts.sh && mkdir rsrc && cd rsrc && wget https://github.com/DarthWound/Argos-DWS/blob/master/rsrc/matrix-curses.py https://github.com/DarthWound/Argos-DWS/blob/master/rsrc/upgrade.sh https://github.com/DarthWound/Argos-DWS/blob/master/rsrc/snapshots.sh https://github.com/DarthWound/Argos-DWS/blob/master/rsrc/yast.sh https://github.com/DarthWound/Argos-DWS/blob/master/rsrc/daynight.sh && cd .. && chmod -R a+x *
 ```
 I suggest you to remove default files located in "~/.config/argos/" before.
 
@@ -35,12 +35,12 @@ I suggest you to remove default files located in "~/.config/argos/" before.
 
 To translate in english, open terminal as user and copy-paste this:
 ```
-wget -qO- https://raw.githubusercontent.com/DarthWound/Argos-scripts/master/translate/english.sh | sh
+wget -qO- https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/translate/english.sh | sh
 ```
 
 To revert back to french, open terminal as user and copy-paste this:
 ```
-wget -qO- https://raw.githubusercontent.com/DarthWound/Argos-scripts/master/translate/french.sh | sh
+wget -qO- https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/translate/french.sh | sh
 ```
 Feel free to submit translations for other languages in "issues" section :)
 
