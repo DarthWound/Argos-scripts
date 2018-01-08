@@ -38,7 +38,7 @@ TWSSA=$(wget -qO - "http://download.opensuse.org/tumbleweed/repo/oss/media.1/pro
 TWSSC=$(lsb_release -sr)
 
 if [ "$TWSSA" == "$TWSSC" ] ; then
-echo "No new snapshot available."
+echo "\033[1mNo new snapshot available.\033[0m"
 elif [ "$TWSSA" != "$TWSSC" ] ; then
 echo "\033[1mSnapshot \"$TWSSA\" available!\033[0m\nClick here to read latest changelogs."
 notify-send -i software-update-available-symbolic "Snapshot \"$TWSSA\" available!"
