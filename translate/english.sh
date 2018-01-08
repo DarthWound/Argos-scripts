@@ -7,16 +7,18 @@ printf "Translating Argos scripts in english...\n"
 
 cat > $DIR/scripts.30m.sh << "EOF"
 #!/usr/bin/env bash
-
-# Content of this script is updated every 30 minutes (rename "30m" part in scripts.30m.sh to change that)
+# Argos-DWS: argos scripts by darthwound
+# Content is updated every 30 minutes (rename "30m" part in "scripts.30m.sh" to change that)
 
 DIR=$(dirname "$0")/rsrc
 DIST=$(lsb_release -sd | tr -d '"')\ \($(lsb_release -sr)\)
-TWSS=$($DIR/snapshots.sh) # openSUSE Tumbleweed only
+# following variables are for openSUSE Tumbleweed only (new snapshot notification and details)
+TWSS=$($DIR/snapshots.sh)
+TWSSA=$(wget -qO - "http://download.opensuse.org/tumbleweed/repo/oss/media.1/products" | grep -oP " \K\d+")
 
 echo "$DIST"
 echo "---"
-echo "<small><i><b>$TWSS</b></i></small>" # openSUSE Tumbleweed only
+echo "<small><i>$TWSS</i></small> | href='https://download.opensuse.org/tumbleweed/iso/Changes.$TWSSA.txt' color=#8e8e80" # openSUSE Tumbleweed only
 echo "---"
 echo "<b>System update</b> | iconName=view-refresh-symbolic | bash='screen $DIR/upgrade.sh && exit 0' terminal=true color=#35b9ab" # edit upgrade.sh for distro
 echo "<b>Run YaST console</b> | iconName=system-run-symbolic | bash='$DIR/yast.sh && exit 0' terminal=true color=#73ba25" # openSUSE (Leap and Tumbleweed) only
@@ -26,7 +28,7 @@ echo "Enter the matrix | bash='gnome-terminal --full-screen -- python3 $DIR/matr
 echo "---"
 echo "Other"
 echo "-- Open scripts folder | bash='xdg-open $DIR' terminal=false"
-echo "-- Edit gnome-shell CSS | bash='xdg-open ~/.themes/Adwaita-DWS/gnome-shell/gnome-shell.css' terminal=false" # only if you use my custom gnome-shell theme
+#echo "-- Edit gnome-shell CSS | bash='xdg-open ~/.themes/Adwaita-DWS/gnome-shell/gnome-shell.css' terminal=false" # only if you use my custom gnome-shell theme
 EOF
 
 cat > $DIR/rsrc/snapshots.sh << "EOF"
@@ -38,7 +40,8 @@ TWSSC=$(lsb_release -sr)
 if [ "$TWSSA" == "$TWSSC" ] ; then
 echo "No new snapshot available."
 elif [ "$TWSSA" != "$TWSSC" ] ; then
-echo "Snapshot \"$TWSSA\" available!" && notify-send -i software-update-available-symbolic "Snapshot \"$TWSSA\" available!"
+echo "\033[1mSnapshot \"$TWSSA\" available!\033[0m\nClick here to read latest changelogs."
+notify-send -i software-update-available-symbolic "Snapshot \"$TWSSA\" available!"
 fi
 EOF
 
