@@ -88,4 +88,6 @@ Title should automatically fetch your distro name with `lsb_release`, if not cha
 
 ## Credits
 
+[Argos](https://github.com/p-e-w/argos/) extension by Philipp Emanuel Weidmann.
+
 [Matrix-Curses](http://github.com/devsnd/matrix-curses/) script by Tom Wallroth, slightly modified by me.
