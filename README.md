@@ -32,15 +32,15 @@ Intended for openSUSE, but you can remove specific entries and edit `upgrade.sh`
 
 - wget / grep / xdg-open
 
-Make sure that everything is installed...
+Make sure that everything is installed in...
 
-...in openSUSE: `su -c 'zypper in chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal'`
+openSUSE: `su -c 'zypper in chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal'`
 
-...in Fedora: `su -c 'dnf install chrome-gnome-shell python3 redhat-lsb wget grep xdg-utils gnome-terminal'`
+Fedora: `su -c 'dnf install chrome-gnome-shell python3 redhat-lsb wget grep xdg-utils gnome-terminal'`
 
-...in Ubuntu/Debian: `su -c 'apt install chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal'`
+Ubuntu/Debian: `su -c 'apt install chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal'`
 
-...in Arch: `su -c 'pacman -S chrome-gnome-shell python lsb-release wget grep xdg-utils gnome-terminal'`
+Arch: `su -c 'pacman -S chrome-gnome-shell python lsb-release wget grep xdg-utils gnome-terminal'`
 
 ## Installation
 
