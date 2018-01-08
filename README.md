@@ -67,11 +67,6 @@ To translate in english, open terminal as user and copy-paste this:
 wget -qO- https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/translate/english.sh | sh
 ```
 
-To revert back to french, open terminal as user and copy-paste this:
-```
-wget -qO- https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/translate/french.sh | sh
-```
-
 Feel free to submit translations for other languages in "issues" section :)
 
 ## Modifications
