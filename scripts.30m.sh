@@ -20,4 +20,3 @@ echo "Entrer dans la matrice | bash='gnome-terminal --full-screen -- python3 $DI
 echo "---"
 echo "Autres"
 echo "-- Ouvrir le dossier de scripts | bash='xdg-open $DIR' terminal=false"
-echo "-- Éditer le CSS gnome-shell | bash='xdg-open ~/.themes/Adwaita-DWS/gnome-shell/gnome-shell.css' terminal=false" # only if you use my custom gnome-shell theme
