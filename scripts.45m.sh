@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Argos-DWS: argos scripts by darthwound
-# Content is updated every 30 minutes (rename "30m" part in "scripts.30m.sh" to change that)
+# Content is updated every 45 minutes (rename "45m" part in "scripts.45m.sh" to change that)
 
 DIR=$(dirname "$0")/rsrc
-# run "lsb_release --help" to change this if it doesn't fit your distro
+# run "lsb_release --help" and "lsb_release -a" to change this if it doesn't fit your distro
 DIST=$(lsb_release -sd | tr -d '"')
 # following variables are for openSUSE Tumbleweed only (new snapshot notification and details)
 TWSS=$($DIR/snapshots.sh)
