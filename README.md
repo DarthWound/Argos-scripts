@@ -55,7 +55,7 @@ rm -rf ~/.config/argos/*
 
 Then, in user terminal, copy-paste this:
 ```
-cd ~/.config/argos/ && wget https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/scripts.45m.sh && mkdir rsrc && cd rsrc && wget https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/rsrc/matrix-curses.py https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/rsrc/upgrade.sh https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/rsrc/snapshots.sh hhttps://raw.githubusercontent.com/DarthWound/Argos-DWS/master/rsrc/yast.sh hhttps://raw.githubusercontent.com/DarthWound/Argos-DWS/master/rsrc/daynight.sh && cd .. && chmod -R a+x *
+cd ~/.config/argos/ && wget https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/scripts.45m.sh && mkdir rsrc && cd rsrc && wget https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/rsrc/matrix-curses.py https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/rsrc/upgrade.sh https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/rsrc/snapshots.sh https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/rsrc/yast.sh https://raw.githubusercontent.com/DarthWound/Argos-DWS/master/rsrc/daynight.sh && cd .. && chmod -R a+x *
 ```
 
 ## Translation
