@@ -17,7 +17,8 @@ DIST=$(lsb_release -sd | tr -d '"')
 TWSS=$($DIR/snapshots.sh)
 TWSSA=$(wget -qO - "http://download.opensuse.org/tumbleweed/repo/oss/media.1/products" | grep -oP " \K\d+")
 
-echo "$DIST"
+#echo "$DIST"
+echo "$DIST <big>&#124;</big> $XDG_CURRENT_DESKTOP"
 echo "---"
 echo "<b>Run YaST console</b> | iconName=system-run-symbolic | bash='$DIR/yast.sh && exit 0' terminal=true color=#73ba25" # openSUSE (Leap and Tumbleweed) only
 echo "<b>System update</b> | iconName=view-refresh-symbolic | bash='screen $DIR/upgrade.sh && exit 0' terminal=true color=#35b9ab" # edit upgrade.sh for distro
