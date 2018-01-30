@@ -12,7 +12,7 @@ Intended for openSUSE, but you can remove specific entries and edit `upgrade.sh`
 
 > * 2-clicks YaST _(ncurses mode, for Wayland)_
 
-> * 2-clicks enable or disable dark theme _(for Adwaita + Adapta, Arc, Geeko, Materia)_
+> * 2-clicks enable or disable dark theme _(for Adwaita+terminal or Adapta, Arc, Geeko, Materia)_
 
 > * Matrix script in fullscreen terminal _(nice screensaver)_
 
