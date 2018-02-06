@@ -1,70 +1,89 @@
 #!/bin/bash
 
-gsk1="org.gnome.desktop.interface gtk-theme"
-gsk2="org.gnome.desktop.wm.preferences theme"
-gsc=$(gsettings get $gsk1)
+gtk="/org/gnome/desktop/interface/gtk-theme"
+wm="/org/gnome/desktop/wm/preferences/theme"
+gs="/org/gnome/shell/extensions/user-theme/name"
+gsc=$(dconf read $gtk)
 
 # Disable the two wget lines if you want to keep your current terminal theme
 if [ "$gsc" == "'Adwaita'" ]
 then
-gsettings set $gsk1 'Adwaita-dark' && gsettings set $gsk2 'Adwaita-dark'
-wget -qO- https://raw.githubusercontent.com/DarthWound/flatui-gnome-terminal/master/flatuidark-gt.sh | sh
+dconf write $gtk "'Adwaita-dark'" && dconf write $wm "'Adwaita-dark'"
+#wget -qO- https://raw.githubusercontent.com/DarthWound/flatui-gnome-terminal/master/flatuidark-gt.sh | sh
 elif [ "$gsc" == "'Adwaita-dark'" ]
 then
-gsettings set $gsk1 'Adwaita' && gsettings set $gsk2 'Adwaita'
-wget -qO- https://raw.githubusercontent.com/DarthWound/flatui-gnome-terminal/master/flatuilight-gt.sh | sh
+dconf write $gtk "'Adwaita'" && dconf write $wm "'Adwaita'"
+#wget -qO- https://raw.githubusercontent.com/DarthWound/flatui-gnome-terminal/master/flatuilight-gt.sh | sh
 fi
 
-# Adapta (https://github.com/adapta-project/adapta-gtk-theme)
-#if [ "$gsc" == "'Adapta'" ]
+# Erdlowe (https://github.com/DarthWound/erdlowe-theme)
+#if [ "$gsc" == "'Erdlowe-light'" ]
 #then
-#gsettings set $gsk1 'Adapta-Nokto' && gsettings set $gsk2 'Adapta-Nokto'
-#elif [ "$gsc" == "'Adapta-Nokto'" ]
+#dconf write $gtk "'Erdlowe-dark'" && dconf write $wm "'Erdlowe-dark'" && dconf write $gs "'Erdlowe-dark'"
+#elif [ "$gsc" == "'Erdlowe-dark'" ]
 #then
-#gsettings set $gsk1 'Adapta' && gsettings set $gsk2 'Adapta'
+#dconf write $gtk "'Erdlowe-light'" && dconf write $wm "'Erdlowe-light'" && dconf write $gs "'Erdlowe-light'"
 #fi
 
-# Adapta Eta (https://github.com/adapta-project/adapta-gtk-theme)
-#if [ "$gsc" == "'Adapta-Eta'" ]
+# Erdlowe Compact (https://github.com/DarthWound/erdlowe-theme)
+#if [ "$gsc" == "'Erdlowe-light-compact'" ]
 #then
-#gsettings set $gsk1 'Adapta-Nokto-Eta' && gsettings set $gsk2 'Adapta-Nokto-Eta'
-#elif [ "$gsc" == "'Adapta-Nokto-Eta'" ]
+#dconf write $gtk "'Erdlowe-dark-compact'" && dconf write $wm "'Erdlowe-dark-compact'" && dconf write $gs "'Erdlowe-dark-compact'"
+#elif [ "$gsc" == "'Erdlowe-dark-compact'" ]
 #then
-#gsettings set $gsk1 'Adapta-Eta' && gsettings set $gsk2 'Adapta-Eta'
-#fi
-
-# Arc (https://github.com/horst3180/Arc-theme)
-#if [ "$gsc" == "'Arc'" ]
-#then
-#gsettings set $gsk1 'Arc-Dark' && gsettings set $gsk2 'Arc-Dark'
-#elif [ "$gsc" == "'Arc-Dark'" ]
-#then
-#gsettings set $gsk1 'Arc' && gsettings set $gsk2 'Arc'
+#dconf write $gtk "'Erdlowe-light-compact'" && dconf write $wm "'Erdlowe-light-compact'" && dconf write $gs "'Erdlowe-light-compact'"
 #fi
 
 # Geeko (https://github.com/LelCP/geeko-gtk-theme)
 #if [ "$gsc" == "'Geeko'" ]
 #then
-#gsettings set $gsk1 'Geeko-Dark' && gsettings set $gsk2 'Geeko-Dark'
+#dconf write $gtk "'Geeko-Dark'" && dconf write $wm "'Geeko-Dark'" && dconf write $gs "'Geeko-Dark'"
 #elif [ "$gsc" == "'Geeko-Dark'" ]
 #then
-#gsettings set $gsk1 'Geeko' && gsettings set $gsk2 'Geeko'
+#dconf write $gtk "'Geeko'" && dconf write $wm "'Geeko'" && dconf write $gs "'Geeko'"
 #fi
 
 # Materia (https://github.com/nana-4/materia-theme)
 #if [ "$gsc" == "'Materia-light'" ]
 #then
-#gsettings set $gsk1 'Materia-dark' && gsettings set $gsk2 'Materia-dark'
+#dconf write $gtk "'Materia-dark'" && dconf write $wm "'Materia-dark'" && dconf write $gs "'Materia-dark'"
 #elif [ "$gsc" == "'Materia-dark'" ]
 #then
-#gsettings set $gsk1 'Materia-light' && gsettings set $gsk2 'Materia-light'
+#dconf write $gtk "'Materia-light'" && dconf write $wm "'Materia-light'" && dconf write $gs "'Materia-light'"
 #fi
 
 # Materia Compact (https://github.com/nana-4/materia-theme)
 #if [ "$gsc" == "'Materia-light-compact'" ]
 #then
-#gsettings set $gsk1 'Materia-dark-compact' && gsettings set $gsk2 'Materia-dark-compact'
+#dconf write $gtk "'Materia-dark-compact'" && dconf write $wm "'Materia-dark-compact'" && dconf write $gs "'Materia-dark-compact'"
 #elif [ "$gsc" == "'Materia-dark-compact'" ]
 #then
-#gsettings set $gsk1 'Materia-light-compact' && gsettings set $gsk2 'Materia-light-compact'
+#dconf write $gtk "'Materia-light-compact'" && dconf write $wm "'Materia-light-compact'" && dconf write $gs "'Materia-light-compact'"
+#fi
+
+# Adapta (https://github.com/adapta-project/adapta-gtk-theme)
+#if [ "$gsc" == "'Adapta'" ]
+#then
+#dconf write $gtk "'Adapta-Nokto'" && dconf write $wm "'Adapta-Nokto'" && dconf write $gs "'Adapta-Nokto'"
+#elif [ "$gsc" == "'Adapta-Nokto'" ]
+#then
+#dconf write $gtk "'Adapta'" && dconf write $wm "'Adapta'" && dconf write $gs "'Adapta'"
+#fi
+
+# Adapta Eta (https://github.com/adapta-project/adapta-gtk-theme)
+#if [ "$gsc" == "'Adapta-Eta'" ]
+#then
+#dconf write $gtk "'Adapta-Nokto-Eta'" && dconf write $wm "'Adapta-Nokto-Eta'" && dconf write $gs "'Adapta-Nokto-Eta'"
+#elif [ "$gsc" == "'Adapta-Nokto-Eta'" ]
+#then
+#dconf write $gtk "'Adapta-Eta'" && dconf write $wm "'Adapta-Eta'" && dconf write $gs "'Adapta-Eta'"
+#fi
+
+# Arc (https://github.com/horst3180/Arc-theme)
+#if [ "$gsc" == "'Arc'" ]
+#then
+#dconf write $gtk "'Arc-Dark'" && dconf write $wm "'Arc-Dark'" && dconf write $gs "'Arc-Dark'"
+#elif [ "$gsc" == "'Arc-Dark'" ]
+#then
+#dconf write $gtk "'Arc'" && dconf write $wm "'Arc'" && dconf write $gs "'Arc'"
 #fi
