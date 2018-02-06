@@ -29,6 +29,7 @@ echo "Enter the matrix | bash='gnome-terminal --full-screen -- python3 $DIR/matr
 echo "---"
 echo "Other"
 echo "-- Open scripts folder | bash='xdg-open $DIR' terminal=false"
+echo "-- Launch Erdlöwe utility | bash='~/.bin/erdlowe.sh' terminal=true" # only if you installed my Erdlöwe theme with dedicated scripts
 EOF
 
 cat > $DIR/rsrc/snapshots.sh << "EOF"
