@@ -12,11 +12,13 @@ Intended for openSUSE, but you can remove specific entries and edit `upgrade.sh`
 
 > * 2-clicks YaST _(ncurses mode, for Wayland)_
 
-> * 2-clicks enable or disable dark theme _(for Adwaita+terminal or Adapta, Arc, Geeko, Materia)_
+> * 2-clicks enable or disable dark theme _(for Adwaita or Erdlöwe, Geeko, Materia, Adapta, Arc)_
 
 > * Matrix script in fullscreen terminal _(nice screensaver)_
 
 > * Tweaking made easy with descriptive comments almost everywhere
+
+> * Erdlöwe script quick access _(see my "erdlowe-theme" repo)_
 
 > * other small stuff
 
@@ -32,15 +34,17 @@ Intended for openSUSE, but you can remove specific entries and edit `upgrade.sh`
 
 - wget / grep / xdg-open
 
+- dconf
+
 Make sure that everything is installed in...
 
-openSUSE: `su -c 'zypper in chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal'`
+openSUSE: `su -c 'zypper in chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal dconf'`
 
-Fedora: `su -c 'dnf install chrome-gnome-shell python3 redhat-lsb wget grep xdg-utils gnome-terminal'`
+Fedora: `su -c 'dnf install chrome-gnome-shell python3 redhat-lsb wget grep xdg-utils gnome-terminal dconf'`
 
-Ubuntu/Debian: `su -c 'apt install chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal'`
+Ubuntu/Debian: `su -c 'apt install chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal dconf-cli'`
 
-Arch: `su -c 'pacman -S chrome-gnome-shell python lsb-release wget grep xdg-utils gnome-terminal'`
+Arch: `su -c 'pacman -S chrome-gnome-shell python lsb-release wget grep xdg-utils gnome-terminal dconf'`
 
 ## Installation
 
