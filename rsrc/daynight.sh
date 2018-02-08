@@ -16,6 +16,15 @@ dconf write $gtk "'Adwaita'" && dconf write $wm "'Adwaita'"
 #wget -qO- https://raw.githubusercontent.com/DarthWound/flatui-gnome-terminal/master/flatuilight-gt.sh | sh
 fi
 
+# Erdlowe (https://github.com/DarthWound/erdlowe-theme) - mix
+#if [ "$gsc" == "'Erdlowe-light'" ]
+#then
+#dconf write $gtk "'Erdlowe-dark'" && dconf write $wm "'Erdlowe-dark'" && dconf write $gs "'Erdlowe-dark-compact'"
+#elif [ "$gsc" == "'Erdlowe-dark'" ]
+#then
+#dconf write $gtk "'Erdlowe-light'" && dconf write $wm "'Erdlowe-light'" && dconf write $gs "'Erdlowe-light-compact'"
+#fi
+
 # Erdlowe (https://github.com/DarthWound/erdlowe-theme)
 #if [ "$gsc" == "'Erdlowe-light'" ]
 #then
