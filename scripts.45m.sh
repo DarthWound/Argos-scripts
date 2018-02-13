@@ -21,4 +21,4 @@ echo "Entrer dans la matrice | bash='gnome-terminal --full-screen -- python3 $DI
 echo "---"
 echo "Autres"
 echo "-- Ouvrir le dossier de scripts | bash='xdg-open $DIR' terminal=false"
-echo "-- Lancer l'utilitaire Erdlöwe | bash='~/.bin/erdlowe.sh' terminal=true" # only if you installed my Erdlöwe theme with dedicated scripts
+#echo "-- Lancer l'utilitaire Erdlöwe | bash='~/.bin/erdlowe.sh' terminal=true" # only if you installed my Erdlöwe theme with dedicated scripts
