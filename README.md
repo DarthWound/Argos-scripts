@@ -22,6 +22,8 @@ Intended for openSUSE, but you can remove specific entries and edit `upgrade.sh`
 
 > * other small stuff
 
+PS: script refresh every 45 minutes, it means that notifications for Tumbleweed snapshots will pop every 45 minutes if updates are available, you can change the frequency by changing main script name _(45m part)_. To remove desktop notifications edit `rsrc/snapshots.sh` _(notify-send command)_, main script warns for new snapshot anyway.
+
 ## Requirements
 
 - Chrome Gnome Shell
