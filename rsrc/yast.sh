@@ -1,3 +1,3 @@
 #!/bin/bash
 
-su -c 'yast'
+su -c 'yast2 --ncurses'
