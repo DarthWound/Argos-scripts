@@ -18,11 +18,11 @@ Intended for openSUSE, but you can remove specific entries and edit `upgrade.sh`
 
 > * Tweaking made easy with descriptive comments almost everywhere
 
-> * Erdlöwe script quick access _(see my "erdlowe-theme" repo)_
+> * Erdlöwe script quick access _(see my "erdlowe-gtk-theme" repo)_
 
 > * other small stuff
 
-PS: script refresh every 45 minutes, it means that notifications for Tumbleweed snapshots will pop every 45 minutes if updates are available, you can change the frequency by changing main script name _(45m part)_. To remove desktop notifications edit `rsrc/snapshots.sh` _(notify-send command)_, main script warns for new snapshot anyway.
+PS: scripts refresh every 45 minutes, it means that notifications for Tumbleweed snapshots will pop every 45 minutes if updates are available, you can change the frequency by changing main script name _(45m part)_. To remove desktop notifications edit `rsrc/snapshots.sh` _(notify-send command)_, main script warns for new snapshot anyway.
 
 ## Requirements
 
@@ -77,7 +77,7 @@ Feel free to submit translations for other languages in "issues" section :)
 
 ## Modifications
 
-It's easy to tweak these scripts at your convenience if you know bash.
+It's easy to tweak these scripts at your convenience if you know bash a little.
 
 Title should automatically fetch your distro name with `lsb_release`, if not change the "$DIST" line in main file. 
 
