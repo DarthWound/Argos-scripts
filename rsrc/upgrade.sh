@@ -3,10 +3,12 @@
 # openSUSE Tumbleweed
 su -c 'zypper ref && zypper dup' # with recommended packages - could reinstall what you've removed but may avoid issues
 #su -c 'zypper ref && zypper dup --no-recommends' # without recommended packages - doesn't reinstall some stuff that you removed
+## Please use zypper locks instead of --no-recommends...
 
 # openSUSE Leap
 # su -c 'zypper ref && zypper up' # with recommended packages - could reinstall what you've removed but may avoid issues
 # su -c 'zypper ref && zypper up --no-recommends' # without recommended packages - doesn't reinstall some stuff that you removed
+## Please use zypper locks instead of --no-recommends...
 
 # Fedora
 # su -c 'dnf --refresh upgrade'
