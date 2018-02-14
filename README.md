@@ -2,7 +2,7 @@
 
 Custom scripts to use with [Argos](https://extensions.gnome.org/extension/1176/argos/) GNOME Shell extension.
 
-Intended for openSUSE, but you can remove specific entries and edit `upgrade.sh` file easily.
+Intended for openSUSE Tumbleweed, but you can remove specific entries and edit `upgrade.sh` file easily.
 
 > **Features:**
 
