@@ -42,13 +42,21 @@ PS: scripts refresh every 45 minutes, it means that notifications for Tumbleweed
 
 Make sure that everything is installed in...
 
-openSUSE: `su -c 'zypper in chrome-gnome-shell python3 lsb-release screen wget grep xdg-utils gnome-terminal dconf'`
+openSUSE:
 
-Fedora: `su -c 'dnf install chrome-gnome-shell python3 redhat-lsb wget grep xdg-utils gnome-terminal dconf'`
+`su -c 'zypper in chrome-gnome-shell python3 lsb-release screen wget grep xdg-utils gnome-terminal dconf'`
 
-Ubuntu/Debian: `su -c 'apt install chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal dconf-cli'`
+Fedora:
 
-Arch: `su -c 'pacman -S chrome-gnome-shell python lsb-release wget grep xdg-utils gnome-terminal dconf'`
+`su -c 'dnf install chrome-gnome-shell python3 redhat-lsb wget grep xdg-utils gnome-terminal dconf'`
+
+Ubuntu/Debian:
+
+`su -c 'apt install chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal dconf-cli'`
+
+Arch:
+
+`su -c 'pacman -S chrome-gnome-shell python lsb-release wget grep xdg-utils gnome-terminal dconf'`
 
 ## Installation
 
