@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# openSUSE Tumbleweed with GNU screen
+su -c 'zypper ref && screen -q zypper dup'
+
 # openSUSE Tumbleweed
-su -c 'zypper ref && zypper dup' # with recommended packages - could reinstall what you've removed but may avoid issues
+#su -c 'zypper ref && zypper dup' # with recommended packages - could reinstall what you've removed but may avoid issues
 #su -c 'zypper ref && zypper dup --no-recommends' # without recommended packages - doesn't reinstall some stuff that you removed
 ## Please use zypper locks instead of --no-recommends...
 
