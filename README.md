@@ -34,13 +34,15 @@ PS: scripts refresh every 45 minutes, it means that notifications for Tumbleweed
 
 - GNOME Terminal
 
+- GNU Screen (Tumbleweed only)
+
 - wget / grep / xdg-open
 
 - dconf
 
 Make sure that everything is installed in...
 
-openSUSE: `su -c 'zypper in chrome-gnome-shell python3 lsb-release wget grep xdg-utils gnome-terminal dconf'`
+openSUSE: `su -c 'zypper in chrome-gnome-shell python3 lsb-release screen wget grep xdg-utils gnome-terminal dconf'`
 
 Fedora: `su -c 'dnf install chrome-gnome-shell python3 redhat-lsb wget grep xdg-utils gnome-terminal dconf'`
 
