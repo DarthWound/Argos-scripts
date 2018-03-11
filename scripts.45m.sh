@@ -4,7 +4,8 @@
 
 DIR=$(dirname "$0")/rsrc
 # run "lsb_release --help" and "lsb_release -a" to change this if it doesn't fit your distro
-DIST=$(lsb_release -sd | tr -d '"')
+DIST=$(lsb_release -sd | tr -d '"') #openSUSE
+#DIST=$(lsb_release -sri) # Fedora
 # following variables are for openSUSE Tumbleweed only (new snapshot notification and details)
 TWSS=$($DIR/snapshots.sh)
 TWSSA=$(wget -qO - "http://download.opensuse.org/tumbleweed/repo/oss/media.1/products" | grep -oP " \K\d+")
